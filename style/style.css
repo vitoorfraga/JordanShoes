@@ -1,0 +1,232 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  --cards: #ebe9ea;
+  --title1: #f6f6f6;
+  --title2: #181818;
+  --desc: #474747;
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.info-header-bg {
+  width: 100%;
+  height: 6rem;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-header {
+  max-width: 1239px;
+  margin: 0 auto;
+}
+
+.info-header span {
+  font-size: 1.6rem;
+  color: var(--title1);
+  font-weight: 400;
+}
+
+header {
+  width: 100%;
+  height: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--title1);
+}
+
+header h1 {
+  font-size: 2.4rem;
+  color: var(--title2);
+}
+
+.intro-bg {
+  width: 100%;
+  height: 37.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(/assets/intro-bg1.png);
+}
+
+.intro {
+  width: 1239px;
+  margin: 0 auto;
+}
+
+.intro-info h2 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: var(--title1);
+  margin: 0 0 3rem 2rem;
+}
+
+.intro-info p {
+  width: 46rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 196.2%;
+  color: var(--title1);
+  margin: 0 0 3rem 2rem;
+}
+
+.destaque-bg {
+  max-width: 123.9rem;
+  margin: 5.8rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.destaque-titles h2 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--title2);
+}
+
+.destaque-titles p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 2rem 0 5.9rem 0;
+  color: var(--desc);
+  text-align: center;
+}
+
+.destaque-itens {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.destaque-item {
+  width: 30rem;
+  height: 30rem;
+  background-color: var(--cards);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0.4rem 3.9rem 0.4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer {
+  width: 100%;
+  height: 6rem;
+  background-color: var(--title2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer span {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--title1);
+}
+
+[data-anime] {
+  opacity: 0;
+}
+
+.fadeInDown {
+  -webkit-transform: translate3d(0, -20px, 0);
+          transform: translate3d(0, -20px, 0);
+}
+
+.anime {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transition: opacity 800ms, -webkit-transform 800ms;
+  transition: opacity 800ms, -webkit-transform 800ms;
+  transition: transform 800ms, opacity 800ms;
+  transition: transform 800ms, opacity 800ms, -webkit-transform 800ms;
+}
+
+[data-anime] {
+  opacity: 0;
+}
+
+.anime {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
+  transition: opacity 0.8s, -webkit-transform 0.8s;
+  transition: transform 0.8s, opacity 0.8s;
+  transition: transform 0.8s, opacity 0.8s, -webkit-transform 0.8s;
+}
+
+/* 7 CSS personalizado dependendo da animação desejada */
+.fadeInDown {
+  -webkit-transform: translate3d(0, -20px, 0);
+          transform: translate3d(0, -20px, 0);
+}
+
+.fadeInUp {
+  -webkit-transform: translate3d(0, 20px, 0);
+          transform: translate3d(0, 20px, 0);
+}
+
+.fadeInRight {
+  -webkit-transform: translate3d(20px, 0, 0);
+          transform: translate3d(20px, 0, 0);
+}
+
+.fadeInLeft {
+  -webkit-transform: translate3d(-20px, 0, 0);
+          transform: translate3d(-20px, 0, 0);
+}
+/*# sourceMappingURL=style.css.map */

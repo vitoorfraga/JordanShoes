@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  --cards: #ebe9ea;
+  --title1: #f6f6f6;
+  --title2: #181818;
+  --desc: #474747;
+
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
